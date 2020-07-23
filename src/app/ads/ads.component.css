@@ -1,0 +1,75 @@
+.card1 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 100%;
+}
+
+.card2 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 100%;
+}
+
+.card1 img {
+    width: 100%;
+    height: 250px;
+    animation: adschange 20s infinite ease-in;
+}
+
+.card2 img {
+    width: 100%;
+    height: 250px;
+    animation: adschange2 20s infinite ease-in;
+}
+
+@keyframes adschange {
+    0% {
+        background-image: url("/assets/Travel_Ad1.jpg");
+        background-size: cover;
+    }
+    25% {
+        background-image: url("/assets/Travel_Ad2.jpg");
+        background-size: cover;
+    }
+    50% {
+        background-image: url("/assets/Travel_Ad3.jpg");
+        background-size: cover;
+    }
+    75% {
+        background-image: url("/assets/Travel_Ad2.jpg");
+        background-size: cover;
+    }
+    100% {
+        background-image: url("/assets/Travel_Ad1.jpg");
+        background-size: cover;
+    }
+}
+
+@keyframes adschange2 {
+    0% {
+        background-image: url("/assets/TRAVEL JOB VACANCY(A4)-01.jpg");
+        background-size: cover;
+    }
+    25% {
+        background-image: url("/assets/Travel_Ad4.jpg");
+        background-size: cover;
+    }
+    50% {
+        background-image: url("/assets/Travel_Ad5.png");
+        background-size: cover;
+    }
+    75% {
+        background-image: url("/assets/Travel_Ad6.jpg");
+        background-size: cover;
+    }
+    100% {
+        background-image: url("/assets/TRAVEL JOB VACANCY(A4)-01.jpg");
+        background-size: cover;
+    }
+}
+
+.card1:hover {
+    box-shadow: 0 8px 20px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card2:hover {
+    box-shadow: 0 8px 20px 10px rgba(0, 0, 0, 0.2);
+}

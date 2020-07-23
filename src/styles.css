@@ -1,0 +1,171 @@
+/* You can add global styles to this file, and also import other style files */
+
+@font-face {
+  font-family: josefinBold;
+  src: url(JosefinSans-Bold.ttf);
+}
+
+@font-face {
+  font-family: josefinRegular;
+  src: url(JosefinSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: RalewayRegular;
+  src: url(Raleway-Regular.ttf);
+}
+
+@font-face {
+  font-family: RalewayBold;
+  src: url(Raleway-Bold.ttf);
+}
+
+.header {
+  height: 150px;
+  animation: header 10s infinite ease-in;
+  font-size: 40px;
+  font-family: josefinBold;
+  /* text-align: center; */
+  padding-top: 20px;
+}
+
+/* @keyframes header {
+  0% {
+    background-color: wheat;
+  }
+  30% {
+    background-color: tomato;
+  }
+  60% {
+    background-color: lightcyan;
+  }
+  100% {
+    background-color: wheat;
+  }
+} */
+
+body {
+  font-family: josefinRegular;
+}
+
+.navbar-nav {
+  margin-left: 20%;
+  font-family: josefinBold;
+  transition: 2s ease-in;
+}
+
+.navbar-brand:hover{
+  color: teal;
+}
+.navbar-brand img{
+  background-color: antiquewhite;
+  border-radius: 50%;
+  transition: 5s;
+}
+.navbar-nav a::after{
+  content: '';
+  align-content: center;
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: teal;
+}
+
+.navbar-nav a::before{
+  content: '';
+  align-content: center;
+  display: block;
+  width: 0px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: teal;
+}
+
+.navbar-nav a{
+  text-align: center;
+  font-size: 18px;
+}
+
+.navbar-nav a:hover{
+  font-size: 15px;
+  color: teal;
+  transition: 0.3s ease-in;
+  /* background-color: silver;
+  border-radius: 10%; */
+  opacity: 0.8;
+}
+.navbar-nav a:hover::after{
+  width: 100%;
+  transition: 0.8s ease-in;
+}
+.navbar-nav a:hover::before{
+  width: 10px;
+  transition: 0.8s ease-in;
+}
+.navbar-brand {
+  font-family: josefinBold;
+  color: black;
+}
+
+.nav-item {
+  width: 100px;
+  margin-right: 1%;
+}
+
+.nav-item a {
+  color: black;
+}
+
+.header_social {
+  margin-top: -110px;
+  margin-left: 1050px;
+  /* float: right; */
+}
+
+.fab {
+  margin-right: 10px;
+  /* background-color: white;
+  border-radius: 50%; */
+  color: black;
+  font-size: 30px;
+  transition: 0.5s ease-in;
+}
+
+.fab:hover {
+  /* background-color: teal; */
+  border-radius: 50%;
+  font-size: 28px;
+  transform: translateY(-10px);
+  /* transform: rotate(360deg) ; */
+}
+
+.fa-facebook:hover {
+  color: slateblue;
+}
+
+.fa-google:hover {
+  color: orangered;
+}
+
+.fa-twitter:hover {
+  color: cornflowerblue;
+}
+
+.fa-snapchat:hover {
+  color: yellow;
+}
+
+.fab::after {
+  content: '';
+  display: block;
+  height: 2px;
+  width: 0%;
+  background-color: black;
+}
+
+.fab:hover::after {
+  width: 100%;
+  transition: 1s ease-in;
+}
+
+/* Footer */

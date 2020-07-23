@@ -1,0 +1,20 @@
+.navbar-nav {
+    margin-left: 2%;
+    font-family: josefinBold;
+  }
+  
+  .navbar-brand {
+    font-family: josefinBold;
+    color: black;
+  }
+  
+  .nav-item {
+    width: 200px;
+    margin-right: 1%;
+    border: 2px solid black;
+  }
+  
+  .nav-item a {
+    color: black;
+  }
+  

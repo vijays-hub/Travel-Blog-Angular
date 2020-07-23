@@ -1,0 +1,26 @@
+<nav class="navbar navbar-expand-sm bg-white sticky-top">
+    <!-- Brand/logo -->
+    <a class="navbar-brand" href="/src/assets/LoGo.png" download="BananaInTheBox_Logo">
+      <img src="assets/LoGo.png" alt="myLogo" style="width:100px;height: 100px;">
+    </a>
+    <a class="navbar-brand" href="app.component.html"><i class="fas fa-bold"></i>.IN.<i class="fas fa-bold"></i></a>
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/home']">Home (Have some intro to ur page)</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/states']">States (Show States)</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">About BinB</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Help Me!</a>
+      </li>
+    </ul>
+    <form class="form-inline" action="/action_page.php">
+      <input class="form-control mr-sm-2" type="text" placeholder="Search Destinations" style="border: 2px solid tomato;">
+      <button class="btn btn-success" type="submit"><a [routerLink]="['/home']" style="text-decoration: none;color: white;">Search</a></button>
+    </form>
+  </nav>
+

@@ -1,0 +1,394 @@
+<br><br>
+<button (click)=toggleDisplay() class="hamburger"><span class="fas fa-bars" style="font-size: 30px; color: red;">
+  </span>
+  <span style="font-size: 30px; font-family: josefinRegular;color: black;" title="Click to hide">
+    Footprints
+  </span>
+</button>
+<br><br>
+
+<div class="col-sm-12" *ngIf="!showBlock" id="statesList">
+  <br><br>
+  <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+    <div class="panel panel-default">
+      <div class="panel-heading" role="tab" id="headingOne">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true"
+            aria-controls="collapseOne">
+            Karnataka
+          </a>
+        </h4>
+      </div>
+      <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+        <div class="panel-body">
+          <ul style="list-style-type: none;">
+            <li>
+              <h5><a [routerLink]="['/states/karnataka']"> State Info </a></h5>
+            </li>
+
+            <li>
+              <h5><a [routerLink]="['/states/karnataka/hampi']"> Hampi </a></h5>
+            </li>
+            <!-- <li> <h5><a [routerLink]="['./hampi']"> Hampi </a></h5></li> -->
+            <li>
+              <h5><a [routerLink]="['/states/karnataka/mysore']"> Mysore </a></h5>
+            </li>
+            <li>
+              <h5><a [routerLink]="['/states/karnataka/malnad']"> Malnad </a></h5>
+            </li>
+            <li>
+              <h5><a [routerLink]="['/states/karnataka/coorg']"> Coorg </a></h5>
+            </li>
+            <li>
+              <h5><a [routerLink]="['/states/karnataka/mangalore']"> Mangalore </a></h5>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading" role="tab" id="headingTwo">
+
+        <!-- <h4 class="panel-title">
+          <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false"
+            aria-controls="collapseTwo">
+          </a>Tamil Nadu
+        </h4> -->
+       <h4> <a [routerLink]="['/states/tamilnadu']"> Tamil Nadu </a></h4>
+
+      </div>
+      <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+        <div class="panel-body">
+          <ul style="list-style-type: none;">
+            <li>
+              <h5><a [routerLink]="['/states/tamilnadu']">State Info</a></h5>
+            </li>
+            <li>
+              <h5><a [routerLink]="['/states/tamilnadu/madurai']"> Madurai </a></h5>
+            </li>
+            <li>
+              <h5><a [routerLink]="['/states/tamilnadu/ooty']"> Ooty </a></h5>
+            </li>
+            <li>
+              <h5><a [routerLink]="['/states/tamilnadu/kodaikanal']"> Kodaikanal </a></h5>
+            </li>
+            <li>
+              <h5><a [routerLink]="['/states/tamilnadu/chidambaram']"> Chidambaram </a></h5>
+            </li>
+            <li>
+              <h5><a [routerLink]="['/states/tamilnadu/mahabalipuram']"> Mahabalipuram </a></h5>
+            </li>
+            <li>
+              <h5><a [routerLink]="['/states/tamilnadu/Kanyakumari']"> Kanyakumari </a></h5>
+            </li>
+
+
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading" role="tab" id="headingThree">
+        <h4 class="panel-title">
+          <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree"
+            aria-expanded="false" aria-controls="collapseThree">
+            Kerala
+          </a>
+        </h4>
+
+      </div>
+      <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+        <div class="panel-body">
+          <ul style="list-style-type: none;">
+            <li>
+              <h5><a [routerLink]="['/states/kerala']"> State Info </a></h5>
+            </li>
+            <li>
+              <h5><a [routerLink]="['/states/kerala/alleppey']"> Alleppey </a></h5>
+            </li>
+            <li>
+              <h5><a [routerLink]="['/states/kerala/munnar']"> Munnar </a></h5>
+            </li>
+            <li>
+              <h5><a [routerLink]="['/states/kerala/kovalam']"> Kovalam </a></h5>
+            </li>
+            <li>
+              <h5><a [routerLink]="['/states/kerala/wayanad']"> Wayanad </a></h5>
+            </li>
+            <li>
+              <h5><a [routerLink]="['/states/kerala/kottayam']"> Kottayam </a></h5>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading" role="tab" id="headingFour">
+        <h4 class="panel-title">
+          <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour"
+            aria-expanded="false" aria-controls="collapseFour">
+            Goa
+          </a>
+        </h4>
+
+      </div>
+      <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+        <div class="panel-body">
+          <ul style="list-style-type: none;">
+            <li>
+              <h5><a [routerLink]="['/states/goa']">State Info</a></h5>
+            </li>
+            <li>
+              <h5><a [routerLink]="['/states/goa/panjim']"> Panjim </a></h5>
+            </li>
+            <li>
+              <h5><a [routerLink]="['/states/goa/calaguntey']"> Calaguntey Beach </a></h5>
+            </li>
+            <li>
+              <h5><a [routerLink]="['/states/goa/baga']"> Baga Beach </a></h5>
+            </li>
+            <li>
+              <h5><a [routerLink]="['/states/goa/vagator']"> Vagator Beach </a></h5>
+            </li>
+            <li>
+              <h5><a [routerLink]="['/states/goa/colva']"> Colva Beach </a></h5>
+            </li>
+            <li>
+              <h5><a [routerLink]="['/states/goa/anjuna']"> Anjuna Beach </a></h5>
+            </li>
+
+
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading" role="tab" id="headingFive">
+        <h4 class="panel-title">
+          <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive"
+            aria-expanded="false" aria-controls="collapseFive">
+            Rajasthan
+          </a>
+        </h4>
+
+      </div>
+      <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+        <div class="panel-body">
+          <ul style="list-style-type: none;">
+            <li>
+              <h5><a [routerLink]="['/states/rajasthan']">State Info</a></h5>
+            </li>
+            <li>
+              <h5><a [routerLink]="['/states/rajasthan/jaipur']"> Jaipur </a></h5>
+            </li>
+            <li>
+              <h5><a [routerLink]="['/states/rajasthan/Udaypur']">  Udaypur </a></h5>
+            </li>
+            <li>
+              <h5><a [routerLink]="['/states/rajasthan/Jodhpur']"> Jodhpur </a></h5>
+            </li>
+            <li>
+              <h5><a [routerLink]="['/states/rajasthan/Jaisalmer']"> Jaisalmer </a></h5>
+            </li>
+            <li>
+              <h5><a [routerLink]="['/states/rajasthan/MountAbu']"> Mount Abu </a></h5>
+            </li>
+            <li>
+              <h5><a [routerLink]="['/states/rajasthan/Bikaner']"> Bikaner </a></h5>
+            </li>
+
+
+          </ul> </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading" role="tab" id="headingSix">
+        <h4>
+          <!-- <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false"
+            aria-controls="collapseSix">
+            Punjab
+          </a> -->
+         <a [routerLink]="['/states/punjab']"> Punjab </a>
+        </h4>
+
+      </div>
+      <!-- <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
+        <div class="panel-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+          richardson ad squid. </div>
+      </div> -->
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading" role="tab" id="headingSeven">
+        <h4 class="panel-title">
+          <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven"
+            aria-expanded="false" aria-controls="collapseSeven">
+            Himachal Pradesh
+          </a>
+        </h4>
+
+      </div>
+      <div id="collapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeven">
+        <div class="panel-body">
+          <ul style="list-style-type: none;">
+            <li>
+              <h5><a [routerLink]="['/states/himachalpradesh']">State Info</a></h5>
+            </li>
+            <li>
+              <h5><a [routerLink]="['/states/himachalpradesh/shimla']"> Shimla </a></h5>
+            </li>
+            <li>
+              <h5><a [routerLink]="['/states/himachalpradesh/manali']">  Manali </a></h5>
+            </li>
+            <li>
+              <h5><a [routerLink]="['/states/himachalpradesh/dalhousie']"> Dalhousie </a></h5>
+            </li>
+            <li>
+              <h5><a [routerLink]="['/states/himachalpradesh/kullu']"> Kullu </a></h5>
+            </li>
+          </ul>   
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading" role="tab" id="headingEight">
+        <h4 class="panel-title">
+          <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseEight"
+            aria-expanded="false" aria-controls="collapseEight">
+            Uttar Pradesh
+          </a>
+        </h4>
+
+      </div>
+      <div id="collapseEight" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEight">
+        <div class="panel-body">
+          <ul style="list-style-type: none;">
+            <li>
+              <h5><a [routerLink]="['/states/uttarpradesh']">State Info</a></h5>
+            </li>
+            <li>
+              <h5><a [routerLink]="['/states/uttarpradesh/agra']"> Agra </a></h5>
+            </li>
+            <li>
+              <h5><a [routerLink]="['/states/uttarpradesh/jhansi']">  Jhansi </a></h5>
+            </li>
+            <li>
+              <h5><a [routerLink]="['/states/uttarpradesh/ramnagarfort']"> Ramnagar Fort </a></h5>
+            </li>
+            <li>
+              <h5><a [routerLink]="['/states/uttarpradesh/sarnath']"> Sarnath </a></h5>
+            </li>
+          </ul>   
+          
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading" role="tab" id="headingNine">
+        <h4 class="panel-title">
+          <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseNine"
+            aria-expanded="false" aria-controls="collapseNine">
+            Gujarat
+          </a>
+        </h4>
+      </div>
+      <div id="collapseNine" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingNine">
+        <div class="panel-body">
+          <ul style="list-style-type: none;">
+            <li>
+              <h5><a [routerLink]="['/states/gujarat']">State Info</a></h5>
+            </li>
+            <li>
+              <h5><a [routerLink]="['/states/gujarat/somnath']"> Somnath </a></h5>
+            </li>
+            <li>
+              <h5><a [routerLink]="['/states/gujarat/Ahmedabad']">  Ahmedabad </a></h5>
+            </li>
+            <li>
+              <h5><a [routerLink]="['/states/gujarat/Dwaraka']"> Dwaraka </a></h5>
+            </li>
+            <li>
+              <h5><a [routerLink]="['/states/gujarat/Vadodara']"> Vadodara </a></h5>
+            </li>
+          </ul>   
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading" role="tab" id="headingTen">
+        <h4>
+          <!-- <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTen" aria-expanded="false"
+            aria-controls="collapseTen">
+            Jammu and Kashmir
+          </a> -->
+          <a [routerLink]="['/states/jammu-kashmir']">Jammu and Kashmir</a>
+        </h4>
+      </div>
+      <div id="collapseTen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTen">
+        <div class="panel-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+          richardson ad squid. </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading" role="tab" id="headingEleven">
+        <h4 class="panel-title">
+          <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseEleven"
+            aria-expanded="false" aria-controls="collapseEleven">
+            West Bengal
+          </a>
+        </h4>
+      </div>
+      <div id="collapseEleven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEleven">
+        <div class="panel-body">
+          <ul style="list-style-type: none;">
+            <li>
+              <h5><a [routerLink]="['/states/west-bengal']">State Info</a></h5>
+            </li>
+            <li>
+              <h5><a [routerLink]="['/states/west-bengal/Darjeeling']"> Darjeeling </a></h5>
+            </li>
+            <li>
+              <h5><a [routerLink]="['/states/west-bengal/Kalimpong']">  Kalimpong </a></h5>
+            </li>
+            <li>
+              <h5><a [routerLink]="['/states/west-bengal/Pedong']"> Pedong </a></h5>
+            </li>
+            <li>
+              <h5><a [routerLink]="['/states/west-bengal/Lava']"> Lava </a></h5>
+            </li>
+          </ul> 
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading" role="tab" id="headingTwelve">
+        <h4 class="panel-title">
+          <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwelve"
+            aria-expanded="false" aria-controls="collapseTwelve">
+            Andhra Pradesh
+          </a>
+        </h4>
+      </div>
+      <div id="collapseTwelve" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwelve">
+        <div class="panel-body">
+          <ul style="list-style-type: none;">
+            <li>
+              <h5><a [routerLink]="['/states/andhra-pradesh']">State Info</a></h5>
+            </li>
+            <li>
+              <h5><a [routerLink]="['/states/andhra-pradesh/tirupathi']"> Tirupathi </a></h5>
+            </li>
+            <li>
+              <h5><a [routerLink]="['/states/andhra-pradesh/vizag']">  Vizag </a></h5>
+            </li>
+            <li>
+              <h5><a [routerLink]="['/states/andhra-pradesh/araku']"> Araku </a></h5>
+            </li>
+            <li>
+              <h5><a [routerLink]="['/states/andhra-pradesh/srisailam']"> Srisailam </a></h5>
+            </li>
+          </ul> 
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

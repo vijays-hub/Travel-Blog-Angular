@@ -1,0 +1,342 @@
+<body>
+
+  <!-- <div class="container-fluid">
+    <div class="header">
+       <div style="float: left; margin-top: -55px;"> 
+      <img src="assets/LoGo.png" alt="BinBLogo" style="height: 200px;width: 200px; float: left; margin-top: -50px;">
+      </div> 
+      <p style="margin-left: 35%; margin-top: 20px;">_banana.in.the.box_</p>
+      <div class="header_social">
+        <span style="font-size: 25px;">Find Us here:</span><br>
+        <a href="facebook"><i class="fab fa-facebook"></i></a>
+        <a href="google"><i class="fab fa-google"></i></a>
+        <a href="twitter"><i class="fab fa-twitter"></i></a>
+        <a href="snapchat"><i class="fab fa-snapchat"></i></a>
+      </div>
+    </div>
+  </div> -->
+  <br>
+  <nav class="navbar navbar-expand-sm bg-white sticky-top">
+    <!-- Brand/logo -->
+    <a class="navbar-brand" href="/src/assets/LoGo.png" download="BananaInTheBox_Logo">
+      <img src="assets/LoGo.png" alt="myLogo" style="width:100px;height: 100px;">
+    </a>
+    <a class="navbar-brand" [routerLink]=" ['/home'] ">Banana.in.the.Box</a>
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/home']">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/states']">States</a>
+      </li>
+      <li class="nav-item">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter"
+        style="color:black;font-size: 18px;background: none;border: none;margin-top: 11px;">
+          About
+        </button>
+      </li>
+      <li class="nav-item">
+        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal"
+          style="color:black;font-size: 18px;background: none;border: none;margin-top: 10px;">Help</button>
+      </li>
+    </ul>
+    <form class="form-inline" action="/action_page.php" style="margin-left: 2%;">
+      <input class="form-control mr-sm-2" type="text" placeholder="Search Destinations"
+        style="border: 2px solid tomato;">
+      <button class="btn btn-success" type="submit"><a [routerLink]="['/home']"
+          style="text-decoration: none;color: white;">Search</a></button>
+    </form>
+  </nav>
+
+  <!-- <div class="container" id="imageBlock">
+    <img src="assets/hero_1.jpg" alt="Notebook" style="width:100%;">
+    <div class="imagecontent">
+      <h1>Heading</h1>
+      <p>Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum te duo, eum cu recteque expetendis
+        neglegentur. Cu mentitum maiestatis persequeris pro, pri ponderum tractatos ei.</p>
+    </div>
+  </div> -->
+
+  <!-- <button (click)=toggleDisplay() class="hamburger"><span class="fas fa-hamburger"
+      style="font-size: 40px; color: red;"></span><span
+      style="font-size: 40px; font-family: josefinRegular;color: black;">Menu</span></button>
+  <br><br>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-2" style="border-right: 2px solid;" *ngIf="!showBlock">
+
+        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingOne">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true"
+                  aria-controls="collapseOne">
+                  Karnataka
+                </a>
+              </h4>
+
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+              <div class="panel-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                richardson ad squid.le VHS.</div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingTwo">
+              <h4 class="panel-title">
+                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"
+                  aria-expanded="false" aria-controls="collapseTwo">
+                  Tamil Nadu
+                </a>
+              </h4>
+
+            </div>
+            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+              <div class="panel-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                richardson ad squid.</div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingThree">
+              <h4 class="panel-title">
+                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree"
+                  aria-expanded="false" aria-controls="collapseThree">
+                  Kerala
+                </a>
+              </h4>
+
+            </div>
+            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+              <div class="panel-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                richardson ad squid. </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingFour">
+              <h4 class="panel-title">
+                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour"
+                  aria-expanded="false" aria-controls="collapseFour">
+                  Goa
+                </a>
+              </h4>
+
+            </div>
+            <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+              <div class="panel-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                richardson ad squid. </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingFive">
+              <h4 class="panel-title">
+                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive"
+                  aria-expanded="false" aria-controls="collapseFive">
+                  Rajasthan
+                </a>
+              </h4>
+
+            </div>
+            <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+              <div class="panel-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                richardson ad squid. </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingSix">
+              <h4 class="panel-title">
+                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSix"
+                  aria-expanded="false" aria-controls="collapseSix">
+                  Punjab
+                </a>
+              </h4>
+
+            </div>
+            <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
+              <div class="panel-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                richardson ad squid. </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingSeven">
+              <h4 class="panel-title">
+                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven"
+                  aria-expanded="false" aria-controls="collapseSeven">
+                  Himachal Pradesh
+                </a>
+              </h4>
+
+            </div>
+            <div id="collapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeven">
+              <div class="panel-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                richardson ad squid. </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingEight">
+              <h4 class="panel-title">
+                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseEight"
+                  aria-expanded="false" aria-controls="collapseEight">
+                  Uttar Pradesh
+                </a>
+              </h4>
+
+            </div>
+            <div id="collapseEight" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEight">
+              <div class="panel-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                richardson ad squid. </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingNine">
+              <h4 class="panel-title">
+                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseNine"
+                  aria-expanded="false" aria-controls="collapseNine">
+                  Gujarat
+                </a>
+              </h4>
+            </div>
+            <div id="collapseNine" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingNine">
+              <div class="panel-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                richardson ad squid. </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingTen">
+              <h4 class="panel-title">
+                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTen"
+                  aria-expanded="false" aria-controls="collapseTen">
+                  Jammu and Kashmir
+                </a>
+              </h4>
+            </div>
+            <div id="collapseTen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTen">
+              <div class="panel-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                richardson ad squid. </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingEleven">
+              <h4 class="panel-title">
+                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseEleven"
+                  aria-expanded="false" aria-controls="collapseEleven">
+                  West Bengal
+                </a>
+              </h4>
+            </div>
+            <div id="collapseEleven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEleven">
+              <div class="panel-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                richardson ad squid. </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingTwelve">
+              <h4 class="panel-title">
+                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwelve"
+                  aria-expanded="false" aria-controls="collapseTwelve">
+                  Andhra Pradesh
+                </a>
+              </h4>
+            </div>
+            <div id="collapseTwelve" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwelve">
+              <div class="panel-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                richardson ad squid. </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-8">
+        [content Loading]
+        <button (click)=toggleDisplay()>Toggle</button>
+      </div>
+      <div class="col-sm-2" style="border-left: 2px solid">
+        <div class="card">
+          <div class="container">
+            <p> <strong>Ads by Vijay S Kumar</strong></p>
+          </div>
+          <img>
+        </div>
+        <br><br>
+        <div class="card2">
+          <div class="container">
+            <p><strong>Ads by Vijay S Kumar</strong></p>
+          </div>
+          <img>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <br> -->
+  <!-- <div class="footer" style="height: 100px;background-color: yellowgreen;">
+
+  </div> -->
+
+  <!-- Modal ...Will Be displayed on clicking button HELP -->
+  <div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-body">
+          <h3>Landed in Trouble? Ping Us!</h3>
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                placeholder="Enter email">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Message</label>
+              <textarea class="form-control" id="exampleInputPassword1"></textarea>
+            </div>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">I'm ok with Promotional Emails from BinB.</label>
+            </div>
+            <br>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal" title="click for help">Help</button>
+            </div>
+          </form>
+        </div>
+        <!-- <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+      </div> -->
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Modal Box For About Us! -->
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">About Us!</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+  standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+  type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining
+  essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
+  passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+      </div>
+      <!-- <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div> -->
+    </div>
+  </div>
+</div>
+
+
+
+  <router-outlet></router-outlet>
+</body>
