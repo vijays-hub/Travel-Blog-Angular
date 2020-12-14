@@ -1,6 +1,3 @@
-
-#Please add the node_modulus folder while accesing this project from your IDE. All the modules required for the application to run are present in that folder.
-
 # Travel Blog
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.6.
